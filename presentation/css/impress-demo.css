@@ -257,6 +257,36 @@ a:focus {
     font-size: 32px;
 }
 
+#title2 {
+    padding: 0;
+}
+
+#title2 .try {
+    font-size: 64px;
+    position: absolute;
+    top: -0.5em;
+    left: 1.5em;
+
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+#title2 h2 {
+	margin-bottom: -70px;
+}
+
+#title2 h1 {
+    font-size: 120px;
+
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
@@ -713,4 +743,17 @@ h3 {
 #singulaeritaeten_baum th:hover,
 #singulaeritaeten_baum td:hover{
 	background: #fff;
+}
+
+h5 {
+	text-align: center;
+}
+
+#moegliche_singularitaeten_overview {
+	display: none
+}
+
+.impress-on-moegliche_singularitaeten_overview .step {
+    opacity: 1;
+    cursor: pointer;
 }

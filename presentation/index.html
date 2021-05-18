@@ -6,8 +6,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Seminar: Rational Points on elliptic curves - Luca Leon Happel</title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description" content="Kapitel 1.3 Weierstraß Normalform und Kapitel 1.4 Explizit Formulas for the Group Law" />
+    <meta name="author" content="Luca Leon Happel" />
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -149,7 +149,7 @@
 		<small>
 			Wenn \(\mathcal{O}\) ein Wendepunkt (point of inflection) ist,
 			können wir eine beliebige Gerade wählen, welche nicht durch
-			\()\mathcal{O}\) geht.
+			\(\mathcal{O}\) geht.
 		</small>
 		<img src="./res/WNF_Konstruktion_3.png">
     </div>
@@ -259,6 +259,7 @@
     </div>
 
     <div id="wnf_beispiel_fazit_2" class="step" data-x="3000" data-y="2500" data-rotate-x="-70" data-rotate-y="45" data-rotate-z="-10">
+		<h3>Rückblick</h3>
 		Das Problem der <strong>rationalen Punkte auf kubischen Kurven
 		</strong> mit mindestens einem rationalen Punkt wurde
 		<strong>deutlich einfacher</strong>!
@@ -349,7 +350,7 @@
 		Welche <strong>Arten von Singularitäten</strong> können auftreten?
     </div>
 
-    <div id="moegliche_singularitaeten_0_uebersicht" class="step" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-500">
+    <div id="moegliche_singularitaeten_0_uebersicht" class="step" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-700">
 		<table id="singulaeritaeten_baum">
 			<tr>
 				<th colspan="3">\(f(x)\)</th>
@@ -359,12 +360,53 @@
 				<td>dreifache Wurzel</td>
 			</tr>
 			<tr>
-				<td>komplexe Richtung der Tangente</td>
-				<td>reelle Richtung der Tangente</td>
+				<td>reelle Richtungen der Tangenten</td>
+				<td>komplexe Richtungen der Tangenten</td>
 				<td></td>
 			</tr>
 		</table>
 	</div>
+
+    <div id="moegliche_singularitaeten_1" class="step" data-x="4000" data-y="1000" data-rotate-x="-90" data-z="-1400">
+		\[y^2=x^2(x+1)\]
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/zmngghivba?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<h5>
+			doppelte Wurzel - zwei reelle Tangenten
+		</h5>
+	</div>
+
+    <div id="moegliche_singularitaeten_2" class="step" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-1600">
+		\[y^2=x^2(x-1)\]
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/epxikyzpdd?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<h5>
+			doppelte Wurzel - zwei komplexe Tangenten
+		</h5>
+	</div>
+
+    <div id="moegliche_singularitaeten_3" class="step" data-x="6000" data-y="1000" data-rotate-x="-90" data-z="-1400">
+		\[y^2=x^3\]
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/dttdboywma?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<h5>
+			dreifache Wurzel
+		</h5>
+	</div>
+
+    <div id="moegliche_singularitaeten_overview" class="step" data-x="4900" data-y="100" data-z="-1200" data-scale="3.5" data-rotate-x="-90">
+    </div>
+
+	<div id="title2" class="step" data-x="1100" data-y="4200" data-scale="4">
+        <h2>1.4</h2>
+		<h1>Explicit Formulas for the Group Law</h1>
+    </div>
+
+    <!-- <div id="wnf_gruppenhom" class="step slide" data-x="-1000" data-y="2800"> -->
+    <!-- </div> -->
 
     <div id="overview" class="step" data-x="2000" data-y="500" data-z="0" data-scale="8">
     </div>
