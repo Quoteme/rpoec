@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}
+		});
+	</script>
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress"
+    data-transition-duration="1000"
+
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000">
+
+    <div id="Erinnerung" class="step slide" data-x="-1000" data-y="-1500">
+		<h2>Erinnerung:</h2>
+		<strong>Mordell's Theorem</strong>
+		<p id="mordellsTheorem">
+		Wenn eine nicht singuläre rationale kubische Kurve in der
+		Ebene einen rationalen Punkt hat, so ist die Gruppe der
+		rationalen Punkte endlich erzeugt.
+		</p>
+		möchten wir beweisen!
+    </div>
+
+	<div id="vereinfachen" class="step" data-x="0" data-y="-1500" data-scale="0.9" data-z="-10">
+		Um beweisen zu können, müssen wir unsere
+		Ausgangssituation vereinfachen!
+    </div>
+
+    <div id="kubische_Kurve" class="step slide" data-x="-1000" data-y="-2500" data-scale="0.8">
+		<h3>Kubische Kurve:</h3>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/s2akfaas4h?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<div class="equation">
+			\[C:ax^3+bx^2y+cxy^2+dy^3\\+ex^2+fxy+gy^2+hx+iy+j=0\]
+		</div>
+    </div>
+
+    <div id="allgemeine_WNF" class="step slide" data-x="0" data-y="-2500" data-scale="0.8">
+		<h3>allgemeine Weierstraß-Normalform:</h3>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/lidsozyvun?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<div class="equation">
+			\[C: P=0 \to C': y^2=x^3+a'x^2+b'x+c'\]
+		</div>
+    </div>
+
+	<div id="title" class="step" data-x="2300" data-y="-2000" data-scale="4">
+        <h2>1.3</h2>
+		<h1>Weierstraß-Normalform</h1>
+    </div>
+
+    <div id="arten_der_WNF" class="step slide" data-x="2000" data-y="-650">
+		<table id="wnf_arten_overview">
+			<tr>
+				<th colspan="2"><h2>Weierstraß-Normalform</h2></th>
+			</tr>
+			<tr>
+				<td><span style="color: #87ba83">klassisch</span></td>
+				<td><span style="color: #f06f48">allgemein</span></td>
+			</tr>
+			<tr>
+				<td>\(y^2=4x^3-\textcolor{#87ba83}{g_2}x-\textcolor{#87ba83}{g_3}\)</td>
+				<td>\(y^2=x^3+\textcolor{#f06f48}{a}x^2+\textcolor{#f06f48}{b}x+\textcolor{#f06f48}{c}\)</td>
+			</tr>
+		</table>
+    </div>
+
+	<div id="zukunft" class="step" data-x="1000" data-y="-650" data-scale="0.8">
+		Wir möchten demnächst nur noch elliptische Kurven der Form
+		\[y^2=x^3+ax^2+bx+c\] betrachten müssen
+    </div>
+
+    <div id="birationale_aequivalenz" class="step" data-x="850" data-y="0" data-scale="3">
+		\(C\) kubische Kurve \(\xrightarrow[\text{Äquivalent}]{\text{birational}}\) WNF
+    </div>
+
+    <div id="wnf_konstruktion_0" class="step" data-x="-1000" data-y="0" data-scale="0.8">
+		Betrachte dazu folgende Konstruktion:
+    </div>
+
+    <div id="wnf_konstruktion_1" class="step slide" data-x="-1000" data-y="700">
+		<h2>Schritt 1</h2>
+		<p>
+			Sei \(C\) eine kubische Kurve im Projektiven Raum
+			mit \(\mathcal{O}\), einem rationalen Punkt auf \(C\).
+			Verändere/wähle Achsen so, dass wir eine einfachere Form
+			erhalten.
+		</p>
+		<img src="./res/WNF_Konstruktion_1.png">
+    </div>
+
+    <!-- <div id="wnf_konstruktion_1_grafik" class="step" data-x="0" data-y="700" data-scale="0.8"> -->
+		<!-- <h3>Schritt 1</h3> -->
+		<!-- <div class="graph"> -->
+			<!-- <iframe src="https://www.desmos.com/calculator/tfznzrmt1e?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe> -->
+		<!-- </div> -->
+		<!-- <div class="equation"> -->
+			<!-- \[\textcolor{red}{C}:X^3+2X^2Z+XZ^2+Y^3-2YZ^2, \quad \textcolor{orange}{\mathcal{O}}=(0:0:0)\] -->
+		<!-- </div> -->
+		<!-- <small>hier -->
+    <!-- </div> -->
+
+    <div id="wnf_konstruktion_2" class="step slide" data-x="00" data-y="700">
+		<h2>Schritt 2</h2>
+		<p>
+			Wir nehmen die Tangente von \(\mathcal{O}\) und verwenden
+			sie als unser \(Z=0\), also unsere \(Z\)-Achse.
+		</p>
+		<img src="./res/WNF_Konstruktion_2.png">
+    </div>
+
+    <div id="wnf_konstruktion_3" class="step slide" data-x="1000" data-y="700">
+		<h2>Schritt 3</h2>
+		<p>
+			Diese Tangente schneidet die Kurve an einer weiteren Stelle
+			\((0:1:0)\) und die Tangente an dieser Stelle wird unsere
+			\(X\)-Achse.
+		</p>
+		<small>
+			Wenn \(\mathcal{O}\) ein Wendepunkt (point of inflection) ist,
+			können wir eine beliebige Gerade wählen, welche nicht durch
+			\()\mathcal{O}\) geht.
+		</small>
+		<img src="./res/WNF_Konstruktion_3.png">
+    </div>
+
+    <div id="wnf_konstruktion_4" class="step slide" data-x="2000" data-y="700">
+		<h2>Schritt 4</h2>
+		<p>
+			Zuletzt wählen wir noch eine beliebige Gerade, welche durch
+			\(\mathcal{O}\) geht als unsere \(Y\)-Achse
+		</p>
+		<img src="./res/WNF_Konstruktion_4.png">
+    </div>
+
+    <div id="wnf_konstruktion_5" class="step slide" data-x="3000" data-y="700">
+		<h2>Schritt 5</h2>
+		\[\underbrace{x=\frac{X}{Z}, \quad y=\frac{Y}{Z}}_{\text{Projektive Transformation}}\]
+		Neue Form der Gleichung:
+		\[xy^2+(ax+b)y=cx^2+dx+e\]
+		Auf beiden Seiten mit \(x\) multiplizieren:
+		\[(xy)^2+(ax+b)xy=cx^3+dx^2+ex\]
+    </div>
+
+    <!-- <div id="wnf_konstruktion_4_graph1" class="step" data-x="2500" data-y="0" data-scale="0.8"> -->
+		<!-- <img src="./res/WNF_Konstruktion_5.png" width="800"> -->
+    <!-- </div> -->
+
+    <!-- <div id="wnf_konstruktion_4_graph2" class="step" data-x="3300" data-y="0" data-scale="0.8"> -->
+		<!-- <img src="./res/WNF_Konstruktion_6.png" width="800"> -->
+    <!-- </div> -->
+
+    <div id="wnf_konstruktion_6" class="step slide" data-x="4000" data-y="700">
+		<h2>Schritt 6</h2>
+		Benenne \(xy\) in \(y\) um:
+		\[y^2+(ax+b)y=cx^3+dx^2+ex\]
+		Benenne \(\left(y-\frac{ax+b}{2}\right)\) in \(y\)
+		(lineare Transformation) um, was effektiv durch
+		<a href="https://de.wikipedia.org/wiki/Quadratische_Erg%C3%A4nzung">quadratische Ergänzung</a>
+		unser Resultat:
+		\[y^2 = \text{kubische Funktion in } x\]
+    </div>
+
+    <div id="wnf_beispiel_0" class="step" data-x="-1000" data-y="1400" data-scale="1.5">
+		Betrachten wir ein Beispiel:
+		\[ u^3+v^3=\alpha, \quad \alpha \in\mathbb{Q} \]
+    </div>
+
+    <div id="wnf_beispiel_0_graph" class="step" data-x="0" data-y="1400" data-scale="0.8">
+		<iframe src="https://www.desmos.com/calculator/hcuusrx8yt?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+
+    <div id="wnf_beispiel_1" class="step slide" data-x="-1000" data-y="2000">
+		<h2>Schritt 1</h2>
+		<ol>
+			<li>Projektivieren: \(U^3+V^3 = \alpha W^3\)</li>
+			<li>Finde \(\mathcal{O}=(1:-1:0)\)</li>
+			<li>Weil \(\mathcal{O}\) ein inflection point ist, können
+				wir \(X=0\) fast frei wählen</li>
+		</ol>
+		Wir erhalten: \[x=\frac{12\alpha}{u+v}, \quad y=36\alpha\frac{u-v}{u+v}\]
+    </div>
+
+    <div id="wnf_beispiel_2" class="step slide" data-x="0" data-y="2000">
+		<h2>Schritt 2</h2>
+		Durch Umformungen erkennen wir, dass \(x,y\) die WNF erfüllen:
+		\[y^2=x^3-432\alpha^2\]
+		Explizit können wir dies nachprüfen, indem wir \(u,v\) einsetzen:
+		\[
+			- \frac{1728 \alpha^{3}}{\left(u + v\right)^{3}} + \frac{1296 \alpha^{2} \left(u - v\right)^{2}}{\left(u + v\right)^{2}} + 432 \alpha^{2}
+		\]
+    </div>
+
+    <div id="wnf_beispiel_2.1" class="step slide" data-x="1000" data-y="2000">
+		Ausmultiplizieren ergibt:
+		\[ \displaylines{- \frac{1728 \alpha^{3}}{u^{3} + 3 u^{2} v + 3 u v^{2} + v^{3}} + \frac{1296 \alpha^{2} u^{2}}{u^{2} + 2 u v + v^{2}} \\- \frac{2592 \alpha^{2} u v}{u^{2} + 2 u v + v^{2}} + \frac{1296 \alpha^{2} v^{2}}{u^{2} + 2 u v + v^{2}} + 432 \alpha^{2}} \]
+		Und zuletzt Vereinfachen:
+		\[ \frac{1728 \alpha^{2} \left(- \alpha + u^{3} + v^{3}\right)}{u^{3} + 3 u^{2} v + 3 u v^{2} + v^{3}} \]
+		Wir sehen also, dass wenn \(y^2=x^3-432\alpha^2\) eine Lösung
+		hat, so auch \(u^3+v^3=\alpha\).
+    </div>
+
+    <div id="wnf_beispiel_3" class="step slide" data-x="2000" data-y="2000">
+		<h2>Schritt 3</h2>
+		Wir können den Prozess auch rückwärts gehen und \(u,v\) durch
+		\(x,y\) darstellen, mit:
+		\[u=\frac{36\alpha+y}{6x}, \quad v=\frac{36\alpha-y}{6x}\]
+		<p>
+			Wenn wir rationale Lösungen für \(y^2=x^3-432\alpha^2\) haben,
+			so haben wir auch rationale Lösungen für \(u^3+v^3=\alpha\) und
+			umgekehrt auch.
+		</p>
+		<small>
+			Es gibt nur endlich viele Ausnahmen (z.B. wenn \(u=-v\))
+			aber diese sind schnell zu finden.
+		</small>
+    </div>
+
+    <div id="wnf_beispiel_fazit_1" class="step" data-x="3000" data-y="2000">
+		<h2>Fazit:</h2>
+		<p>
+		Rationale Punkte auf \(C\) stehen <strong>1:1</strong> zu rationale Punkte
+			auf WNF von \(C\) für jede kubische Kurve \(C\)
+			<br>
+			<small>
+				(Bis auf endlich viele Ausnahmen)
+			</small>
+		</p>
+    </div>
+
+    <div id="wnf_beispiel_fazit_2" class="step" data-x="3000" data-y="2500" data-rotate-x="-70" data-rotate-y="45" data-rotate-z="-10">
+		Das Problem der <strong>rationalen Punkte auf kubischen Kurven
+		</strong> mit mindestens einem rationalen Punkt wurde
+		<strong>deutlich einfacher</strong>!
+		<br>
+		Wir müssen nur noch die <strong>rationalen Punkte auf der WNF
+		</strong> betrachten!
+    </div>
+
+    <div id="wnf_gruppenhom" class="step slide" data-x="-1000" data-y="2800">
+		<p>
+			Transformationen haben gerade Linien <strong>nicht</strong>
+			auf gerade Linien geschickt.
+		</p>
+		<p>
+			Wird Gruppenstruktur (siehe. Seminar Daniel) erhalten?
+			Ja! Unsere Transformationen sind also ein (nicht trivialer)
+			Gruppenhomomorphismus.
+		</p>
+		<p>
+			Additionsgesetz ist intrinsisch zur Kurve, also
+			<strong>invariant unter birationaler Transformation</strong>.
+			<span class="todo">Beweis? Wurde nicht gegeben.</span>
+		</p>
+    </div>
+
+    <div id="geschichte" class="step slide" data-x="4000" data-y="-2000">
+		<h2>Geschichte</h2>
+		<p>
+			"Elliptische Kurven" (birational äquivalent zu
+			\(y^2=f(x)=x^3+ax^2+bx+c\) mit \(f(x)\) verschiedene komplexe Wurzeln)
+			entsprangen dem Errechnen der Bogenlänge von Ellipsen.
+		</p>
+		<p>
+			Um Länge von Ellipse zu berechnen, muss man eine Funktion
+			\(y=\sqrt{f(x)}\) integrieren.
+		</p>
+    </div>
+
+    <div id="elliptische_Kurven_0" class="step" data-x="5000" data-y="-2100">
+		Durch
+		\[y^2=\underbrace{x^3+ax^2+bx+c}_{f(x)}, \quad a,b,c\in\mathbb{Q}\]
+		können wir elliptische Kurven
+		genauer verstehen:
+    </div>
+
+    <div id="elliptische_Kurven_1" class="step slide" data-x="5000" data-y="-1200">
+		Nach Klassifikation der irreduziblen Polynome in
+		\(\mathbb{R}[x]\) muss \(f(x)\) mindestens eine relle Wurzel
+		\(\alpha\) haben.
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/qet73gqgj4?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+    <div id="elliptische_Kurven_2" class="step slide" data-x="5000" data-y="-400">
+		\(f(x)\) kann jedoch auch 3 relle Wurzeln haben. Dann haben wir
+		zwei zusammenhängende Teilmengen.
+		<small>(Angenommen Wurzeln sind paarweise verschieden)</small>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/4ocovho7pw?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+    <div id="elliptische_Kurven_3" class="step slide" data-x="5000" data-y="400">
+		<p>
+			Wenn Wurzeln nicht paarweise verschieden sind, also
+			<strong>\(f(x)\) nicht quadratfrei</strong> ist, so muss die
+			Kurve:
+			\[C:\underbrace{y^2-f(x)}_{F(x,y)}=0\]
+			Singularitäten besitzen!
+		</p>
+    </div>
+
+    <div id="elliptische_Kurven_3.1" class="step slide" data-x="6000" data-y="400">
+		<h2>Beweis</h2>
+		\[\frac{\partial F}{\partial x}=-f'(x), \quad \frac{\partial F}{\partial y}=2x\]
+		<p>
+			Singularitäten können also nur auf der \(x\)-Achse vorkommen.
+			Also wenn \((x_0,y_0)\) Singularität, so \(y_0=0\).
+		</p>
+		<p>
+			Daher \(f(x_0)=y_0^2=0\) und \(f(x)\) und \(f'(x)\) haben
+			gemeinsame Wurzel bei \(x_0\).
+		</p>
+    </div>
+
+    <div id="moegliche_singularitaeten_0" class="step" data-x="5000" data-y="1000" data-rotate-x="-65" data-rotate-y="-10">
+		Welche <strong>Arten von Singularitäten</strong> können auftreten?
+    </div>
+
+    <div id="moegliche_singularitaeten_0_uebersicht" class="step" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-500">
+		<table id="singulaeritaeten_baum">
+			<tr>
+				<th colspan="3">\(f(x)\)</th>
+			</tr>
+			<tr>
+				<td colspan="2">doppelte Wurzel</td>
+				<td>dreifache Wurzel</td>
+			</tr>
+			<tr>
+				<td>komplexe Richtung der Tangente</td>
+				<td>reelle Richtung der Tangente</td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+
+    <div id="overview" class="step" data-x="2000" data-y="500" data-z="0" data-scale="8">
+    </div>
+
+</div>
+
+<div id="impress-toolbar"></div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>

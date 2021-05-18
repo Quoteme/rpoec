@@ -1,0 +1,81 @@
+<h1 id="rational-points-on-elliptic-curves">Rational points on elliptic curves</h1>
+<h2 id="weierstrass-normal-form">Weierstrass Normal Form</h2>
+<ul>
+<li>Warum
+<ul>
+<li>einfachere Beweise</li>
+<li>weniger freie Variablen</li>
+</ul></li>
+<li>Was
+<ul>
+<li>Nimmt eine kubische Kurve <span class="math inline"><em>C</em></span> zu einem Polynom <span class="math inline"><em>P</em> ∈ ℚ[<em>x</em>,<em>y</em>]</span> von <a href="https://de.wikipedia.org/wiki/Grad_(Polynom)">Totalgrad</a> drei rein und gibt eine einfachere Version aus</li>
+<li><span class="math inline"><em>P</em> = <em>a</em><em>x</em><sup>3</sup> + <em>b</em><em>x</em><sup>2</sup><em>y</em> + <em>c</em><em>x</em><em>y</em><sup>2</sup> + <em>d</em><em>y</em><sup>3</sup> + <em>e</em><em>x</em><sup>2</sup> + <em>f</em><em>x</em><em>y</em> + <em>g</em><em>y</em><sup>2</sup> + <em>h</em><em>x</em> + <em>i</em><em>y</em> + <em>j</em></span></li>
+<li>klassische WNF <span class="math inline"><em>C</em> : <em>P</em> = 0 → <em>C</em>′ : <em>y</em><sup>2</sup> = 4<em>x</em><sup>3</sup> − <em>g</em><sub>2</sub><em>x</em> − <em>g</em><sub>1</sub></span></li>
+<li>allgemeinere WNF <span class="math inline"><em>C</em> : <em>P</em> = 0 → <em>C</em>′ : <em>y</em><sup>2</sup> = <em>x</em><sup>3</sup> + <em>a</em>′<em>x</em><sup>2</sup> + <em>b</em>′<em>x</em> + <em>c</em>′</span></li>
+</ul></li>
+<li>Wie
+<ul>
+<li><span class="math inline"><em>C</em> ⊂ ℙℝ<sup>2</sup></span> ein kubische Kurve in projektiver Ebene
+<ul>
+<li>Angenommen <span class="math inline">𝒪 ∈ <em>C</em></span> rationaler Punkt</li>
+</ul></li>
+<li>PLAN: Wähle Achsen von <span class="math inline">ℙℝ<sup>2</sup></span> so, dass wir WNF erhalten
+<ul>
+<li>Achsentransformationen sind Achsen Transformationen <span class="math inline"><em>A</em><em>v</em> + <em>b</em></span> mit <span class="math inline"><em>A</em></span> linear und <span class="math inline"><em>b</em> ∈ ℙℝ<sup>2</sup></span></li>
+</ul></li>
+<li>Bestimmen der neuen Achsen
+<ol type="1">
+<li><span class="math inline"><em>Z</em> = 0</span> als Tangente an <span class="math inline">𝒪</span> wählen</li>
+<li><span class="math inline"><em>Z</em></span> schneidet <span class="math inline"><em>C</em></span> an einem weiteren Punkt. (siehe Seminar Daniel) Tangente hier ist <span class="math inline"><em>X</em> = 0</span>
+<ul>
+<li>Wenn <span class="math inline">𝒪</span> ein Wendepunkt ist, kann <span class="math inline"><em>X</em> = 0</span> beliebige Gerade sein, welche nicht <span class="math inline">𝒪</span> beinhaltet</li>
+</ul></li>
+<li>Wähle <span class="math inline"><em>Y</em> = 0</span> eine beliebige andere Gerade durch <span class="math inline">𝒪</span></li>
+</ol></li>
+<li>Liefern neue Achsen (erreichbar durch Achsen Transformationen) WNF? <!-- - $\mathbb{AR}^2 \supset C': P=0$ --> <!-- - $\mathbb{AR}^2 \supset C': ax^3+bx^2y+cxy^2+dy^3+ex^2+fxy+gy^2+hx+iy+j=0$ -->
+<ul>
+<li><span class="math inline">ℙℝ<sup>2</sup> ⊃ <em>C</em> : <em>a</em><em>X</em><sup>3</sup> + <em>b</em><em>X</em><sup>2</sup><em>Y</em> + <em>c</em><em>X</em><em>Y</em><sup>2</sup> + <em>d</em><em>Y</em><sup>3</sup> + <em>e</em><em>X</em><sup>2</sup><em>Z</em> + <em>f</em><em>X</em><em>Y</em><em>Z</em> + <em>g</em><em>Y</em><sup>2</sup><em>Z</em> + <em>h</em><em>X</em><em>Z</em><sup>2</sup> + <em>i</em><em>Y</em><em>Z</em><sup>2</sup> + <em>j</em><em>Z</em><sup>3</sup> = 0</span></li>
+<li><span class="math inline">$x = \frac{X}{Z}, \&gt; y = \frac{Y}{Z}$</span></li>
+<li><span class="math inline">𝔸ℝ<sup>2</sup> ⊃ <em>C</em>′ : <em>a</em><em>x</em><sup>3</sup> + <em>b</em><em>x</em><sup>2</sup><em>y</em> + <em>c</em><em>x</em><em>y</em><sup>2</sup> + <em>d</em><em>y</em><sup>3</sup> + <em>e</em><em>x</em><sup>2</sup> + <em>f</em><em>x</em><em>y</em> + <em>g</em><em>y</em><sup>2</sup> + <em>h</em><em>x</em> + <em>i</em><em>y</em> + <em>j</em> = 0</span></li>
+</ul></li>
+</ul></li>
+<li>Beispiel 1: <span class="math inline"><em>u</em><sup>3</sup> + <em>v</em><sup>3</sup> = <em>α</em></span>
+<ol type="1">
+<li>Projektivieren: <span class="math inline"><em>U</em><sup>3</sup> + <em>V</em><sup>3</sup> = <em>α</em><em>W</em><sup>3</sup></span> mit <span class="math inline">𝒪 = (1:−1:0)</span>
+<ul>
+<li><span class="math inline">1<sup>3</sup> + (−1)<sup>3</sup> = 0 ⋅ <em>α</em></span></li>
+<li><span class="math inline">𝒪</span> ist ein Wendepunkt, somit <span class="math inline"><em>X</em> = 0</span> beliebige Gerade, die nicht durch <span class="math inline">𝒪</span> geht</li>
+</ul></li>
+<li>Wähle <span class="math inline"><em>Z</em> = 0</span> als Tangente am Punkt <span class="math inline">𝒪</span></li>
+<li>Wähle <span class="math inline"><em>Y</em> = 0</span> als weitere Gerade durch <span class="math inline">𝒪</span></li>
+<li><span class="math inline">$x=\frac{X}{Z}=\frac{12\alpha}{u+v}, \&gt; y=\frac{Y}{Z}=36\alpha\frac{u-v}{u+v}$</span></li>
+<li><span class="math inline"><em>y</em><sup>2</sup> = <em>x</em><sup>3</sup> − 432<em>α</em></span></li>
+</ol></li>
+</ul>
+<h3 id="birationale-transformationen-erhalten-gruppenstruktur">Birationale Transformationen erhalten Gruppenstruktur</h3>
+<p>Aufgrund der Achsen Transformationen, welche injektiv sind, gibt es eine <em>1:1 Korrespondenz</em> der rationalen Punkte auf der einen Kurve und der anderen.</p>
+<p>Auch wenn gerade Linien durch Achsentransformationen nicht erhalten bleiben, ist Achsentransformationen ein Gruppenhomomorphismus zwischen den Gruppen auf den jeweiligen Kurven. (nicht trivial: <em>Additionsgesetz ist invariant unter birationaler transformation</em>)</p>
+<h3 id="geschichte-hinter-dem-namen-der-elliptische-kurve">Geschichte hinter dem Namen der “Elliptische Kurve”</h3>
+<ul>
+<li>Elliptische Kurve <span class="math inline"><em>y</em><sup>2</sup> = <em>f</em>(<em>x</em>) = <em>x</em><sup>3</sup> + <em>a</em><em>x</em><sup>2</sup> + <em>b</em><em>x</em> + <em>c</em>,  <em>a</em>, <em>b</em>, <em>c</em>,  ∈ ℚ</span>
+<ul>
+<li><span class="math inline"><em>f</em></span> hat mindestens eine reelle Komponente
+<ul>
+<li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/ECClines-3.svg" title="fig:" alt="components" /></li>
+<li>links, zwei Komponenten
+<ul>
+<li>drei reelle Wurzeln für <span class="math inline"><em>f</em></span></li>
+</ul></li>
+<li>rechts eine Komponente
+<ul>
+<li>eine reelle Wurzel für <span class="math inline"><em>f</em></span> -.Wenn <span class="math inline"><em>g</em></span> birational äquivalent zu einer elliptischen Kurve ist, so wird auch g als elliptische Kurve gesehen</li>
+</ul></li>
+</ul></li>
+<li>Elliptische Kurve ist keine Ellipse
+<ul>
+<li>Wenn <span class="math inline"><em>h</em></span> eine Ellipse ist und man möchte die Länge herausfinden, so muss man ein Integral mit <span class="math inline">$y=\sqrt{f(x)}$</span> lösen</li>
+<li>daher “elliptische Kurve” für <span class="math inline"><em>y</em><sup>2</sup> = <em>f</em>(<em>x</em>)</span></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="explicit-formulas-for-the-group-law">Explicit Formulas For The Group Law</h2>
