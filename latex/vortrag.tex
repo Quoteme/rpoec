@@ -45,7 +45,7 @@
 \begin{frame}
 \frametitle{allgemeine Weierstraß Normalform}
     \begin{figure}
-		\caption{$C: P=0 \to C': y^2=x^3+ax^2+bx+c$}
+		\caption{$C: y^2=x^3+ax^2+bx+c$}
 		\includegraphics[scale=0.3]{images/desmos-graph02.png}
     \end{figure}
 \end{frame}
@@ -200,118 +200,118 @@
 	aber diese sind schnell zu finden.
 \end{frame}
 
-\begin{frame}{Theorem von Mordell(1922)}
-    Sei \(C\) eine nicht-singuläre kubische Kurve, dann gibt es eine endliche Menge von rationalen Punkten, so dass alle anderen rationalen Punkte duch wiederholtes Geraden ziehen und schneiden erhalten werden können.
-\end{frame}
+% \begin{frame}{Theorem von Mordell(1922)}
+%     Sei \(C\) eine nicht-singuläre kubische Kurve, dann gibt es eine endliche Menge von rationalen Punkten, so dass alle anderen rationalen Punkte duch wiederholtes Geraden ziehen und schneiden erhalten werden können.
+% \end{frame}
 
-\begin{frame}{Existenz}
-    Es gibt leider noch keine Methode die in endlich vielen Schritten feststellt, ob eine über \(\mathbb{Q}\) definierte kubische Kurve \(C\subset\mathbb{P}^{2}(\mathbb{C})\) einen rationalen Punkt besitzt. Es gibt kein Analogon von Hasse's Therorem für kubische Kurven.
-\end{frame}
+% \begin{frame}{Existenz}
+%     Es gibt leider noch keine Methode die in endlich vielen Schritten feststellt, ob eine über \(\mathbb{Q}\) definierte kubische Kurve \(C\subset\mathbb{P}^{2}(\mathbb{C})\) einen rationalen Punkt besitzt. Es gibt kein Analogon von Hasse's Therorem für kubische Kurven.
+% \end{frame}
 
-\begin{frame}{Annahme}
-    Um dieses schwierige Problem zu Umgehen werden wir von nun an annehmen das unsere kubische Kurve \(C\subset\mathbb{P}^{2}(\mathbb{C})\) einen rationalen Punkt hat, den wir \(\mathcal{O}\) nennen.
-\end{frame}
+% \begin{frame}{Annahme}
+%     Um dieses schwierige Problem zu Umgehen werden wir von nun an annehmen das unsere kubische Kurve \(C\subset\mathbb{P}^{2}(\mathbb{C})\) einen rationalen Punkt hat, den wir \(\mathcal{O}\) nennen.
+% \end{frame}
 
-\begin{frame}{Verknüpfung II}
-   Wenn wir zwei rationale Punkte auf einer über \(\mathbb{Q}\) definierten kubischen Kurve \(C\subset\mathbb{P}^{2}(\mathbb{C})\) haben, sagen wir \(P\) und \(Q\). Dann sieht \(\ast\) aus wie eine Verknüpfung auf der Menger aller rationalen Punkte auf \(C\), die ein Paar \((P,Q)\) zum Punkt \(P\ast Q\) schickt. Was für eine algebraische Struktur liefert uns diese Verknüpfung?
-\end{frame}
+% \begin{frame}{Verknüpfung II}
+%    Wenn wir zwei rationale Punkte auf einer über \(\mathbb{Q}\) definierten kubischen Kurve \(C\subset\mathbb{P}^{2}(\mathbb{C})\) haben, sagen wir \(P\) und \(Q\). Dann sieht \(\ast\) aus wie eine Verknüpfung auf der Menger aller rationalen Punkte auf \(C\), die ein Paar \((P,Q)\) zum Punkt \(P\ast Q\) schickt. Was für eine algebraische Struktur liefert uns diese Verknüpfung?
+% \end{frame}
 
-\begin{frame}{Gruppe}
-    Eine Gruppe? Leider nicht, da man leicht sieht, dass es kein neutrales Element gibt.\newline
-    Aber durch ausprobieren, können wir die Menge der rationalen Punkte zu einer kommutativen Gruppe machen, wobei das neutrale Element gegeben ist durch \(\mathcal{O}\).
-\end{frame}
+% \begin{frame}{Gruppe}
+%     Eine Gruppe? Leider nicht, da man leicht sieht, dass es kein neutrales Element gibt.\newline
+%     Aber durch ausprobieren, können wir die Menge der rationalen Punkte zu einer kommutativen Gruppe machen, wobei das neutrale Element gegeben ist durch \(\mathcal{O}\).
+% \end{frame}
 
-\begin{frame}{Addition}
-Die Addition dieser Gruppe ist gegeben durch
-\[P+Q=\mathcal{O}\ast(P\ast Q)=Q+P\]
-\begin{center}
-% \includegraphics[scale=0.3]{images/3.PNG}
-\end{center}
-Müssen also nur noch verifizieren, dass die Addition den Gruppenaxiomen genügt.
-\end{frame}
+% \begin{frame}{Addition}
+% Die Addition dieser Gruppe ist gegeben durch
+% \[P+Q=\mathcal{O}\ast(P\ast Q)=Q+P\]
+% \begin{center}
+% % \includegraphics[scale=0.3]{images/3.PNG}
+% \end{center}
+% Müssen also nur noch verifizieren, dass die Addition den Gruppenaxiomen genügt.
+% \end{frame}
 
-\begin{frame}{Neutrales Element}
-\[P+\mathcal{O}=P\]
-\begin{center}
-% \includegraphics[scale=0.3]{images/4.PNG}
-\end{center}
-\end{frame}
+% \begin{frame}{Neutrales Element}
+% \[P+\mathcal{O}=P\]
+% \begin{center}
+% % \includegraphics[scale=0.3]{images/4.PNG}
+% \end{center}
+% \end{frame}
 
-\begin{frame}{Inverse}
-\[Q+(-Q)=\mathcal{O}\]
-\begin{center}
-% \includegraphics[scale=0.3]{images/5.PNG}
-\end{center}
-\end{frame}
+% \begin{frame}{Inverse}
+% \[Q+(-Q)=\mathcal{O}\]
+% \begin{center}
+% % \includegraphics[scale=0.3]{images/5.PNG}
+% \end{center}
+% \end{frame}
 
-\begin{frame}{Assoziativ}
-\[(P+Q)+R=P+(Q+R)\] um dies zu zeigen, reicht es zu zeigen, dass \[(P+Q)\ast R=P\ast(Q+R)\]
-\end{frame}
+% \begin{frame}{Assoziativ}
+% \[(P+Q)+R=P+(Q+R)\] um dies zu zeigen, reicht es zu zeigen, dass \[(P+Q)\ast R=P\ast(Q+R)\]
+% \end{frame}
 
-\begin{frame}{Assoziativ}
-\begin{center}
-% \includegraphics[scale=0.3]{images/6.PNG}
-\end{center}
-\end{frame}
+% \begin{frame}{Assoziativ}
+% \begin{center}
+% % \includegraphics[scale=0.3]{images/6.PNG}
+% \end{center}
+% \end{frame}
 
-\begin{frame}{Assoziativ}
-    Jeder der Punkte
-    \[\mathcal{O},P,Q,R,P\ast Q,P+Q,Q\ast R, Q+R\quad(\ast\ast\ast)\]
-    liegt auf einer gestrichelten oder einer der durchgezogenen Geraden. Wenn der Schnittpunkt der gestrichelten Gerade durch \(P+Q\) und \(R\) und der durchgezogenen Gerade durch \(P\) und \(Q+R\) auf der kubischen Kurve liegt, haben wir gezeigt, dass \[(P+Q)\ast R=P\ast(Q+R)\]
-\end{frame}
+% \begin{frame}{Assoziativ}
+%     Jeder der Punkte
+%     \[\mathcal{O},P,Q,R,P\ast Q,P+Q,Q\ast R, Q+R\quad(\ast\ast\ast)\]
+%     liegt auf einer gestrichelten oder einer der durchgezogenen Geraden. Wenn der Schnittpunkt der gestrichelten Gerade durch \(P+Q\) und \(R\) und der durchgezogenen Gerade durch \(P\) und \(Q+R\) auf der kubischen Kurve liegt, haben wir gezeigt, dass \[(P+Q)\ast R=P\ast(Q+R)\]
+% \end{frame}
 
-\begin{frame}{Bezout's Theorem}
-    Der Schnitt \(X\cap Y\) von zwei allgemeinen Kurven \(X,Y\subset\mathbb{P}^{2}(\mathbb{C})\) von Grad \(m,n\geq1\) besteht aus mn Punkten. In unserem Fall also 9 Punkten
-    \begin{center}
-        % \includegraphics[scale=0.3]{images/2.PNG}
-    \end{center}
-\end{frame}
+% \begin{frame}{Bezout's Theorem}
+%     Der Schnitt \(X\cap Y\) von zwei allgemeinen Kurven \(X,Y\subset\mathbb{P}^{2}(\mathbb{C})\) von Grad \(m,n\geq1\) besteht aus mn Punkten. In unserem Fall also 9 Punkten
+%     \begin{center}
+%         % \includegraphics[scale=0.3]{images/2.PNG}
+%     \end{center}
+% \end{frame}
 
-\begin{frame}{Lemma}
-    Wir wollen folgendes Lemma benutzen:\newline
-    \begin{quote}
-    Seien \(C,C_{1}\) und \(C_{2}\) kubische Kurven.Angenommen \(C\) geht durch 8 der 9 Schnittpunkte von \(C_{1}\) und \(C_{2}\). Dann geht \(C\) auch durch den 9. Schnittpunkt.
-    \end{quote}
-\end{frame}
+% \begin{frame}{Lemma}
+%     Wir wollen folgendes Lemma benutzen:\newline
+%     \begin{quote}
+%     Seien \(C,C_{1}\) und \(C_{2}\) kubische Kurven.Angenommen \(C\) geht durch 8 der 9 Schnittpunkte von \(C_{1}\) und \(C_{2}\). Dann geht \(C\) auch durch den 9. Schnittpunkt.
+%     \end{quote}
+% \end{frame}
 
-\begin{frame}{Beweis I}
-    Um eine kubische Kurve \(C\) zu definieren brauchen wir 10 Koeffizienten, wobei das multiplizieren dieser Koefizienten mit einer Einheit die gleiche Kurve liefert. Können uns also die Menge aller kubischen Kurve als 9-dimensional vorstellen. Wenn wir jetzt fordern, dass die kubischen Kurven durch einen gegebenen Punkt gehen, stellt dies eine lineare Bedingung an die Koeffizienten des kubischen Polynoms. Die Menge aller kubischen Kurve die durch einen gegebenen Punkt gehen ist also nur noch 8-dimensional. Induktiv erreichen wir, dass die Familie aller kubischen Kurven die durch die 8 Schnittpunkte \(P_{1},\dots,P_{8}\) von \(C_{1}\) und \(C_{2}\) gehen 1-dimensional ist.
-\end{frame}
+% \begin{frame}{Beweis I}
+%     Um eine kubische Kurve \(C\) zu definieren brauchen wir 10 Koeffizienten, wobei das multiplizieren dieser Koefizienten mit einer Einheit die gleiche Kurve liefert. Können uns also die Menge aller kubischen Kurve als 9-dimensional vorstellen. Wenn wir jetzt fordern, dass die kubischen Kurven durch einen gegebenen Punkt gehen, stellt dies eine lineare Bedingung an die Koeffizienten des kubischen Polynoms. Die Menge aller kubischen Kurve die durch einen gegebenen Punkt gehen ist also nur noch 8-dimensional. Induktiv erreichen wir, dass die Familie aller kubischen Kurven die durch die 8 Schnittpunkte \(P_{1},\dots,P_{8}\) von \(C_{1}\) und \(C_{2}\) gehen 1-dimensional ist.
+% \end{frame}
 
-\begin{frame}{Beweis II}
-    Seien \(F_{1}(x,y)=0\) und \(F_{2}(x,y)=0\) die kubischen Gleichung von \(C_{1}\) und \(C_{2}\). Dann ist für jede Wahl von \(\lambda_{1}\) und \(\lambda_{2}\), die Linearkombination \(\lambda_{1}F_{1}+\lambda_{2}F_{2}\) ist eine kubische Kurve, die durch \(P_{1},\dots,P_{8}\) geht. Da die Familie solcher kubischen Kurven 1-dimensional ist, muss \(\lambda_{1}F_{1}+\lambda_{2}F_{2}\) diese Familie sein. Insbesondere ist die kubische Kurve \(C\) gegeben durch die Gleichung \(\lambda_{1}F_{1}+\lambda_{2}F_{2}=0\) für geeignetes \(\lambda_{1}\) und \(\lambda_{2}\).
-\end{frame}
+% \begin{frame}{Beweis II}
+%     Seien \(F_{1}(x,y)=0\) und \(F_{2}(x,y)=0\) die kubischen Gleichung von \(C_{1}\) und \(C_{2}\). Dann ist für jede Wahl von \(\lambda_{1}\) und \(\lambda_{2}\), die Linearkombination \(\lambda_{1}F_{1}+\lambda_{2}F_{2}\) ist eine kubische Kurve, die durch \(P_{1},\dots,P_{8}\) geht. Da die Familie solcher kubischen Kurven 1-dimensional ist, muss \(\lambda_{1}F_{1}+\lambda_{2}F_{2}\) diese Familie sein. Insbesondere ist die kubische Kurve \(C\) gegeben durch die Gleichung \(\lambda_{1}F_{1}+\lambda_{2}F_{2}=0\) für geeignetes \(\lambda_{1}\) und \(\lambda_{2}\).
+% \end{frame}
 
-\begin{frame}{Beweis III}
-    Da \(P_{9}\) auf \(C_{1}\) und \(C_{2}\) liegt, verschwinden \(F_{1}(x,y)\) und \(F_{2}(x,y)\) beide in \(P_{9}\). Daraus folgt, dass auch \(\lambda_{1}F_{1}+\lambda_{2}F_{2}\) in \(P_{9}\) verschwindet, also liegt \(P_{9}\) auch in \(C\).
-\end{frame}
+% \begin{frame}{Beweis III}
+%     Da \(P_{9}\) auf \(C_{1}\) und \(C_{2}\) liegt, verschwinden \(F_{1}(x,y)\) und \(F_{2}(x,y)\) beide in \(P_{9}\). Daraus folgt, dass auch \(\lambda_{1}F_{1}+\lambda_{2}F_{2}\) in \(P_{9}\) verschwindet, also liegt \(P_{9}\) auch in \(C\).
+% \end{frame}
 
-\begin{frame}{Assoziativ}
-    Wir haben 9 Punkte, nämlich die genannten 8 Punkte und den Schnittpunkt der gestrichelten und durchgezogenen Gerade. Wir haben also zwei (degenerierte) kubische Kurven die durch 9 Punkte gehen, da eine Gerade durch eine lineare Gleichung gegeben ist und die Multiplikation von drei linearen Gleichungen eine kubische Gleichung ist. Die Lösungsmenge dieser ist einfach die Vereinigung der drei Geraden.
-\end{frame}
+% \begin{frame}{Assoziativ}
+%     Wir haben 9 Punkte, nämlich die genannten 8 Punkte und den Schnittpunkt der gestrichelten und durchgezogenen Gerade. Wir haben also zwei (degenerierte) kubische Kurven die durch 9 Punkte gehen, da eine Gerade durch eine lineare Gleichung gegeben ist und die Multiplikation von drei linearen Gleichungen eine kubische Gleichung ist. Die Lösungsmenge dieser ist einfach die Vereinigung der drei Geraden.
+% \end{frame}
 
-\begin{frame}{Assoziativ}
-    Sei \(C_{1}\) die Vereinigung der drei gestrichelten Geraden und \(C_{2}\) die Vereinigung der drei durchgezogenen Geraden. Per Konstruktion gehen die zwei kubischen Kurven durch die 9 Punkte. Die originale kubische Kurve \(C\) geht durch die 8 Punkte gegeben in \((\ast\ast\ast)\) und somit nach Lemma auch durch den Neunten. Damit haben wir gezeigt
-    \[(P+Q)\ast R=P\ast(Q+R)\]
-\end{frame}
+% \begin{frame}{Assoziativ}
+%     Sei \(C_{1}\) die Vereinigung der drei gestrichelten Geraden und \(C_{2}\) die Vereinigung der drei durchgezogenen Geraden. Per Konstruktion gehen die zwei kubischen Kurven durch die 9 Punkte. Die originale kubische Kurve \(C\) geht durch die 8 Punkte gegeben in \((\ast\ast\ast)\) und somit nach Lemma auch durch den Neunten. Damit haben wir gezeigt
+%     \[(P+Q)\ast R=P\ast(Q+R)\]
+% \end{frame}
 
-\begin{frame}{Mordell's Theorem}
-    Haben also folgende Umformulierung von Mordell's Theorem:
-    \begin{quote}
-        \textbf{Mordell's Theorem}. Wenn eine nicht-singuläre rationale kubische Kurve einen rationalen Punkt hat, dann ist die Gruppe der rationalen Punkte endlich erzeugt.
-    \end{quote}
-    Diese Version ist natürlich deutlich besser, da wir nun elementare Gruppentheorie benutzen können für den Beweis.
-\end{frame}
+% \begin{frame}{Mordell's Theorem}
+%     Haben also folgende Umformulierung von Mordell's Theorem:
+%     \begin{quote}
+%         \textbf{Mordell's Theorem}. Wenn eine nicht-singuläre rationale kubische Kurve einen rationalen Punkt hat, dann ist die Gruppe der rationalen Punkte endlich erzeugt.
+%     \end{quote}
+%     Diese Version ist natürlich deutlich besser, da wir nun elementare Gruppentheorie benutzen können für den Beweis.
+% \end{frame}
 
-\begin{frame}{Bemerkungen I}
-    Die Wahl von \(\mathcal{O}\) ist bei allen Betrachtungen nicht von Bedeutung. Wenn wir ein anderes \(\mathcal{O}'\) als neutrales Element wählen, dann bekommen wir eine Gruppe mit der selben Struktur. Denn die Abbildung
-    \[P\rightarrow P+\mathcal{O}'\]
-    ist ein Isomorphismus von der Gruppe \((C,\mathcal{O},+)\) zu der Gruppe \((C,\mathcal{O}',+')\), wobei die neue Addition gegeben ist durch
-    \[P+'Q=P+Q-\mathcal{O}'\]
-\end{frame}
+% \begin{frame}{Bemerkungen I}
+%     Die Wahl von \(\mathcal{O}\) ist bei allen Betrachtungen nicht von Bedeutung. Wenn wir ein anderes \(\mathcal{O}'\) als neutrales Element wählen, dann bekommen wir eine Gruppe mit der selben Struktur. Denn die Abbildung
+%     \[P\rightarrow P+\mathcal{O}'\]
+%     ist ein Isomorphismus von der Gruppe \((C,\mathcal{O},+)\) zu der Gruppe \((C,\mathcal{O}',+')\), wobei die neue Addition gegeben ist durch
+%     \[P+'Q=P+Q-\mathcal{O}'\]
+% \end{frame}
 
-\begin{frame}{Bemerkungen II}
-    Wenn die Gerade durch \(P\) und \(Q\) tangent zur Kurve in \(P\) ist, dann muss der dritte Schnittpunkt, als \(P\) interpretiert werden. Und wenn du die Tangente als Gerade durch \(P\) und \(P\) deutest, ist der dritte Schnittpunkt \(Q\). Wenn \(P\) ein Inflektionspunkt von \(C\)
-    ist, dann trifft die Tangente in \(P\) die Kurve dreimal in \(P\). In diesem Fall ist der dritte Schnittpunkt für die Gerade durch \(P\) und \(P\) wieder \(P\). In anderen Worten, wenn \(P\) ein Inflektionspunkt ist, dann \(P\ast P=P\).
-\end{frame}
+% \begin{frame}{Bemerkungen II}
+%     Wenn die Gerade durch \(P\) und \(Q\) tangent zur Kurve in \(P\) ist, dann muss der dritte Schnittpunkt, als \(P\) interpretiert werden. Und wenn du die Tangente als Gerade durch \(P\) und \(P\) deutest, ist der dritte Schnittpunkt \(Q\). Wenn \(P\) ein Inflektionspunkt von \(C\)
+%     ist, dann trifft die Tangente in \(P\) die Kurve dreimal in \(P\). In diesem Fall ist der dritte Schnittpunkt für die Gerade durch \(P\) und \(P\) wieder \(P\). In anderen Worten, wenn \(P\) ein Inflektionspunkt ist, dann \(P\ast P=P\).
+% \end{frame}
 \end{document}

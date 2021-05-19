@@ -104,6 +104,11 @@
 		\(C\) kubische Kurve \(\xrightarrow[\text{Äquivalent}]{\text{birational}}\) WNF
     </div>
 
+    <div id="birationale_aequivalenz-extra" class="step" data-x="40" data-y="-500" data-scale="0.5">
+		"birational äquivalent" bedeutet, es gibt eine projektive
+		Transformation zwischen den kubischen Kurven
+    </div>
+
     <div id="wnf_konstruktion_0" class="step" data-x="-1000" data-y="0" data-scale="0.8">
 		Betrachte dazu folgende Konstruktion:
     </div>
@@ -111,7 +116,7 @@
     <div id="wnf_konstruktion_1" class="step slide" data-x="-1000" data-y="700">
 		<h2>Schritt 1</h2>
 		<p>
-			Sei \(C\) eine kubische Kurve im Projektiven Raum
+			Sei \(C\) eine kubische Kurve in projektiver Ebene \(\mathbb{PR}^2\)
 			mit \(\mathcal{O}\), einem rationalen Punkt auf \(C\).
 			Verändere/wähle Achsen so, dass wir eine einfachere Form
 			erhalten.
@@ -130,7 +135,7 @@
 		<!-- <small>hier -->
     <!-- </div> -->
 
-    <div id="wnf_konstruktion_2" class="step slide" data-x="00" data-y="700">
+    <div id="wnf_konstruktion_2" class="step slide" data-x="0" data-y="700">
 		<h2>Schritt 2</h2>
 		<p>
 			Wir nehmen die Tangente von \(\mathcal{O}\) und verwenden
@@ -139,7 +144,11 @@
 		<img src="./res/WNF_Konstruktion_2.png">
     </div>
 
-    <div id="wnf_konstruktion_3" class="step slide" data-x="1000" data-y="700">
+    <div id="wnf_konstruktion_2.1" class="step" data-x="600" data-y="1300" data-scale="0.7">
+		<img width="800" src="./res/projektiverRaum.png">
+    </div>
+
+    <div id="wnf_konstruktion_3" class="step slide" data-x="1000" data-y="700" data-z="0">
 		<h2>Schritt 3</h2>
 		<p>
 			Diese Tangente schneidet die Kurve an einer weiteren Stelle
@@ -189,6 +198,19 @@
 		<a href="https://de.wikipedia.org/wiki/Quadratische_Erg%C3%A4nzung">quadratische Ergänzung</a>
 		unser Resultat:
 		\[y^2 = \text{kubische Funktion in } x\]
+    </div>
+
+    <div id="wnf_konstruktion_6-extra" class="step slide" data-x="4000" data-y="1500">
+		<h2>Schritt 6 - Extra</h2>
+		<p>
+			Leitkoeffizient \(\lambda\) muss nicht \(1\) sein, doch wir können
+			\(x\) mit \(\lambda x\) und \(y\) mit \(\lambda^2 y\)
+			substituieren.
+		</p>
+		<p>
+			Man kann auch \(x^2\) Term durch Substitution
+			von \(x\) mit \(x-a\) entfernen.
+		</p>
     </div>
 
     <div id="wnf_beispiel_0" class="step" data-x="-1000" data-y="1400" data-scale="1.5">
@@ -302,7 +324,14 @@
 		Durch
 		\[y^2=\underbrace{x^3+ax^2+bx+c}_{f(x)}, \quad a,b,c\in\mathbb{Q}\]
 		können wir elliptische Kurven
-		genauer verstehen:
+		genauer verstehen
+    </div>
+
+    <div id="elliptische_Kurven_0.1" class="step" data-x="4000" data-y="-1400">
+		Für eine elliptische Kurve muss also \(f(x)\) verschiedene
+		(komplexe) Wurzeln haben. Aber wieso?
+		<!-- Doch wieso nehmen wir immer an, dass unsere kubische Kurve -->
+		<!-- <strong>nicht singulär</strong> ist? -->
     </div>
 
     <div id="elliptische_Kurven_1" class="step slide" data-x="5000" data-y="-1200">
@@ -350,7 +379,7 @@
 		Welche <strong>Arten von Singularitäten</strong> können auftreten?
     </div>
 
-    <div id="moegliche_singularitaeten_0_uebersicht" class="step" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-700">
+    <div id="moegliche_singularitaeten_0_uebersicht" class="step singualitaeten" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-700">
 		<table id="singulaeritaeten_baum">
 			<tr>
 				<th colspan="3">\(f(x)\)</th>
@@ -367,48 +396,170 @@
 		</table>
 	</div>
 
-    <div id="moegliche_singularitaeten_1" class="step" data-x="4000" data-y="1000" data-rotate-x="-90" data-z="-1400">
+    <div id="moegliche_singularitaeten_1" class="step singualitaeten" data-x="4000" data-y="1000" data-rotate-x="-90" data-z="-1400">
 		\[y^2=x^2(x+1)\]
 		<div class="graph">
 			<iframe src="https://www.desmos.com/calculator/zmngghivba?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
 		<h5>
-			doppelte Wurzel - zwei reelle Tangenten
+			doppelte Wurzel - <a href="https://en.wikipedia.org/wiki/Crunode">zwei reelle Tangenten</a>
 		</h5>
 	</div>
 
-    <div id="moegliche_singularitaeten_2" class="step" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-1600">
+    <div id="moegliche_singularitaeten_2" class="step singualitaeten" data-x="5000" data-y="1000" data-rotate-x="-90" data-z="-1600">
 		\[y^2=x^2(x-1)\]
 		<div class="graph">
 			<iframe src="https://www.desmos.com/calculator/epxikyzpdd?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
 		<h5>
-			doppelte Wurzel - zwei komplexe Tangenten
+			doppelte Wurzel - <a href="https://en.wikipedia.org/wiki/Acnode">zwei komplexe Tangenten</a>
 		</h5>
 	</div>
 
-    <div id="moegliche_singularitaeten_3" class="step" data-x="6000" data-y="1000" data-rotate-x="-90" data-z="-1400">
+    <div id="moegliche_singularitaeten_3" class="step singualitaeten" data-x="6000" data-y="1000" data-rotate-x="-90" data-z="-1400">
 		\[y^2=x^3\]
 		<div class="graph">
 			<iframe src="https://www.desmos.com/calculator/dttdboywma?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
 		<h5>
-			dreifache Wurzel
+			<a href="https://de.wikipedia.org/wiki/Spitze_(Singularit%C3%A4tentheorie)">dreifache Wurzel</a>
 		</h5>
 	</div>
 
     <div id="moegliche_singularitaeten_overview" class="step" data-x="4900" data-y="100" data-z="-1200" data-scale="3.5" data-rotate-x="-90">
     </div>
 
-	<div id="title2" class="step" data-x="1100" data-y="4200" data-scale="4">
+    <div id="elliptische_Kurven_4" class="step slide" data-x="6000" data-y="1300" data-z="0">
+		<h2>Kegelschnitte und Singularitäten</h2>
+		<p>
+			Sei \(L\) eine Gerade, welche durch den singulären Punkt \(P\) geht.
+			\(L\) schneidet nur einen weiteren Punkt auf der Kurve \(C\),
+			da \(L\) bereits \(P\) doppelt schneidet.
+		</p>
+		<p>
+			Wir können also die Schnittpunkte von \(L\) betrachten. Das
+			ergibt eine <strong>Projektion der Kurve \(C\) auf eine
+			Gerade</strong>, welche bijektiv ist.
+		</p>
+		<p>
+			Korrelation zu Kegelschnitten, wo die rationalen Punkte
+			auch 1:1 zu den Punkten auf einer Gerade im Verhältnis
+			stehen!
+		</p>
+    </div>
+
+    <div id="elliptische_Kurven_4.1" class="step" data-x="7000" data-y="1000" data-z="0">
+		<div class="equation">\[y^2=x^2(x-1)\]</div>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/36gctpnrmi?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+    <div id="elliptische_Kurven_4.2" class="step" data-x="7000" data-y="1700" data-z="0">
+		<div class="equation">\[y^2+x^2=1\]</div>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/mb7gqj10sx?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+    <div id="elliptische_Kurven_4.3" class="step" data-x="7700" data-y="900" data-z="0">
+		<div class="equation">\[y^2=x^2(x+1)\]</div>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/ycstapflss?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+    <div id="elliptische_Kurven_4.4" class="step" data-x="7700" data-y="1700" data-z="0">
+		<h5>Gegenbeispiel</h5>
+		<div class="equation">\[y^2=x^3-x\]</div>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/kk3quval0w?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+	<div id="title2" class="step" data-x="1300" data-y="4200" data-scale="4">
         <h2>1.4</h2>
 		<h1>Explicit Formulas for the Group Law</h1>
+    </div>
+
+    <div id="point_at_infinity_0" class="step slide" data-x="3000" data-y="3500" data-z="0">
+		<h2>Point at infinity</h2>
+		Betrachte wieder kubische Kurve
+		\[y^2=x^3+ax^2+bx+c\]
+		Und ihre Projektivierung
+		\[Y^2Z=X^3+aX^2Z+bXZ^2+cZ^3\]
+    </div>
+
+    <div id="point_at_infinity_1" class="step slide" data-x="4000" data-y="3500" data-z="0">
+		<p>
+			Wenn wir \(Z=0\) setzen, so sehen wir nur noch die
+			Nullstellen auf der <a href="wnf_konstruktion_2.1">line at infinity</a>.
+		</p>
+		\[Y^2\cdot 0=X^3+aX^2\cdot 0+bX\cdot 0^2+c\cdot 0^3\]
+		\[\Leftrightarrow 0=X^3\]
+		<p>
+			Wir erkennen also, dass es auf der line at infinity nur
+			eine <a href="moegliche_singularitaeten_3">dreifache Nullstelle</a>
+			gibt!
+		</p>
+		<p>
+			\(X=0, \> Z=0\) korrespondiert zu \(\mathcal{O} = (0:1:0)\), also den
+			vertikalen Linien, wenn man \(\mathbb{P}^2 = \mathbb{A}^2 \dot\cup \mathbb{P}^1\)
+			als Koprodukt auffasst.
+		</p>
+    </div>
+
+	<div id="point_at_infinity_1.1" class="step" data-x="5000" data-y="3500" data-z="0">
+		<h4 style="margin-bottom: 10px">Beispiel</h4>
+		<div style="margin-bottom: 5px; font-size: 26px">\(y^2=x(x-1)(x+1)\)</div>
+		<img style="width: 600px; margin: auto" src="./res/projektiverRaumKoprodukt.png">
+    </div>
+
+	<div id="point_at_infinity_2" class="step slide" data-x="6000" data-y="3500" data-z="0">
+		<h2>Point at infinity - nicht singulär (1)</h2>
+		\[P=Y^2Z-X^3-aX^2Z-bXZ^2-cZ^3\]
+		Berechne Ableitungen
+		\[
+			\begin{aligned}
+				\frac{\partial P}{\partial X} &= -9X^2 - 2aXZ - bZ^2 \\
+				\frac{\partial P}{\partial Y} &= 2YZ \\
+				\frac{\partial P}{\partial Z} &= Y^2 - aX^2 - 2bXZ - 3Z^2
+			\end{aligned}
+		\]
+    </div>
+
+	<div id="point_at_infinity_2.1" class="step slide" data-x="7000" data-y="3500" data-z="0">
+		<h2>Point at infinity - nicht singulär (2)</h2>
+		\[P=Y^2Z-X^3-aX^2Z-bXZ^2-cZ^3\]
+		Ableitungen für \(\mathcal{O}\) ausrechnen
+		\[
+			\begin{aligned}
+				\left(
+					\frac{\partial P}{\partial X},
+					\frac{\partial P}{\partial Y},
+					\frac{\partial P}{\partial Z},
+				\right)(\mathcal{O})
+				&= (0,0,1) \\
+				&\neq (0,0,0)
+			\end{aligned}
+		\]
+		Somit ist \(\mathcal{O}\) <strong>kein</strong> singulärer Ort!
+		<br>
+		<br>
+		<small> *Er ist jedoch ein Wendepunkt (point of inflection)
+			und wir behandeln \(\mathcal{O}\) als einen rationalen Punkt.
+		</strong>
+    </div>
+
+	<div id="gruppengesetz" class="step" data-x="3200" data-y="4300" data-z="0">
+		Betrachten wir nun das <strong>Gruppengesetz</strong> mit \(\mathcal{O}\)
+		als Einheit
     </div>
 
     <!-- <div id="wnf_gruppenhom" class="step slide" data-x="-1000" data-y="2800"> -->
     <!-- </div> -->
 
-    <div id="overview" class="step" data-x="2000" data-y="500" data-z="0" data-scale="8">
+    <div id="overview" class="step" data-x="2500" data-y="1000" data-z="0" data-scale="9">
     </div>
 
 </div>

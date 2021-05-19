@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.7)  18 MAY 2021 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.7)  19 MAY 2021 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -953,7 +953,7 @@ Overfull \vbox (33.17319pt too high) detected at line 51
 ] [7
 
 ]
-<images/WNF_Konstruktion_1.png, id=62, 131.0496pt x 75.4017pt>
+<images/WNF_Konstruktion_1.png, id=61, 131.0496pt x 75.4017pt>
 File: images/WNF_Konstruktion_1.png Graphic file (type png)
 <use images/WNF_Konstruktion_1.png>
 Package pdftex.def Info: images/WNF_Konstruktion_1.png  used on input line 78.
@@ -963,7 +963,7 @@ Package pdftex.def Info: images/WNF_Konstruktion_1.png  used on input line 78.
  <./images/WNF_Konstruktion_1.png>] [9
 
 ]
-<images/WNF_Konstruktion_2.png, id=74, 136.8312pt x 82.3878pt>
+<images/WNF_Konstruktion_2.png, id=73, 136.8312pt x 82.3878pt>
 File: images/WNF_Konstruktion_2.png Graphic file (type png)
 <use images/WNF_Konstruktion_2.png>
 Package pdftex.def Info: images/WNF_Konstruktion_2.png  used on input line 91.
@@ -973,7 +973,7 @@ Package pdftex.def Info: images/WNF_Konstruktion_2.png  used on input line 91.
  <./images/WNF_Konstruktion_2.png>] [11
 
 ]
-<images/WNF_Konstruktion_3.png, id=86, 148.8762pt x 95.6373pt>
+<images/WNF_Konstruktion_3.png, id=85, 148.8762pt x 95.6373pt>
 File: images/WNF_Konstruktion_3.png Graphic file (type png)
 <use images/WNF_Konstruktion_3.png>
 Package pdftex.def Info: images/WNF_Konstruktion_3.png  used on input line 109.
@@ -984,7 +984,7 @@ Package pdftex.def Info: images/WNF_Konstruktion_3.png  used on input line 109.
  <./images/WNF_Konstruktion_3.png>] [13
 
 ]
-<images/WNF_Konstruktion_4.png, id=99, 137.0721pt x 92.0238pt>
+<images/WNF_Konstruktion_4.png, id=98, 137.0721pt x 92.0238pt>
 File: images/WNF_Konstruktion_4.png Graphic file (type png)
 <use images/WNF_Konstruktion_4.png>
 Package pdftex.def Info: images/WNF_Konstruktion_4.png  used on input line 122.
@@ -999,7 +999,7 @@ Package pdftex.def Info: images/WNF_Konstruktion_4.png  used on input line 122.
 ] [17
 
 ]
-<images/desmos-graph03.png, id=125, 803.0pt x 803.0pt>
+<images/desmos-graph03.png, id=124, 803.0pt x 803.0pt>
 File: images/desmos-graph03.png Graphic file (type png)
 <use images/desmos-graph03.png>
 Package pdftex.def Info: images/desmos-graph03.png  used on input line 154.
@@ -1018,58 +1018,6 @@ Overfull \vbox (3.62874pt too high) detected at line 154
 
 ] [22
 
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-]
-[27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-] [35
-
-] [36
-
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 304.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/b/it' undefined
-(Font)              using `OT1/cmss/m/n' instead on input line 304.
-
-[41
-
-] [42
-
-] [43
-
 ]
 \tf@nav=\write6
 \tf@toc=\write7
@@ -1077,19 +1025,15 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/it' undefined
  (./vortrag.aux)
 Package rerunfilecheck Info: File `vortrag.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
  ) 
 Here is how much of TeX's memory you used:
- 17945 strings out of 479383
- 339569 string characters out of 5875831
+ 17843 strings out of 479383
+ 338428 string characters out of 5875831
  636862 words of memory out of 5000000
- 34523 multiletter control sequences out of 15000+600000
- 414624 words of font info for 67 fonts, out of 8000000 for 9000
+ 34464 multiletter control sequences out of 15000+600000
+ 414268 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,11n,126p,697b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 125i,11n,126p,699b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1099,12 +1043,11 @@ mss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
 -dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on vortrag.pdf (43 pages, 315822 bytes).
+8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on vortrag.pdf (22 pages, 287100 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

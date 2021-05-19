@@ -753,7 +753,8 @@ h5 {
 	display: none
 }
 
-.impress-on-moegliche_singularitaeten_overview .step {
+.impress-on-moegliche_singularitaeten_overview .singualitaeten
+{
     opacity: 1;
     cursor: pointer;
 }
