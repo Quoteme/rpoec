@@ -406,7 +406,7 @@
 		<div class="graph">
 			<iframe src="https://www.desmos.com/calculator/zmngghivba?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
-		<h5>
+		<h5 style="margin-top: 5px;">
 			doppelte Wurzel - <a href="https://en.wikipedia.org/wiki/Crunode">zwei reelle Tangenten</a>
 		</h5>
 	</div>
@@ -416,7 +416,7 @@
 		<div class="graph">
 			<iframe src="https://www.desmos.com/calculator/epxikyzpdd?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
-		<h5>
+		<h5 style="margin-top: 5px;">
 			doppelte Wurzel - <a href="https://en.wikipedia.org/wiki/Acnode">zwei komplexe Tangenten</a>
 		</h5>
 	</div>
@@ -426,7 +426,7 @@
 		<div class="graph">
 			<iframe src="https://www.desmos.com/calculator/dttdboywma?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
-		<h5>
+		<h5 style="margin-top: 5px;">
 			<a href="https://de.wikipedia.org/wiki/Spitze_(Singularit%C3%A4tentheorie)">dreifache Wurzel</a>
 		</h5>
 	</div>
@@ -520,6 +520,14 @@
 		<img style="width: 600px; margin: auto" src="./res/projektiverRaumKoprodukt.png">
     </div>
 
+	<div id="point_at_infinity_1.2" class="step" data-x="5000" data-y="2500" data-z="0">
+		<iframe src="https://quoteme.github.io/projectiveEllipiticCurvePlotter/" width="600px" height="600px" style="border: 1px solid #ccc" frameborder=0></iframe>
+		<p style="font-size: 28px; margin-top: 5px;">
+			Tipp: nahe heranzoomen und mit Maus Kamera zur Seite drehen.
+			<a href="https://github.com/Quoteme/projectiveEllipiticCurvePlotter/">Quelle</a>
+		</p>
+    </div>
+
 	<div id="point_at_infinity_2" class="step slide" data-x="6000" data-y="3500" data-z="0">
 		<h2>Point at infinity - nicht singulär (1)</h2>
 		\[P=Y^2Z-X^3-aX^2Z-bXZ^2-cZ^3\]
@@ -556,15 +564,197 @@
 		</strong>
     </div>
 
-	<div id="gruppengesetz" class="step" data-x="3200" data-y="4300" data-z="0">
+	<div id="gruppengesetz_einleitung" class="step" data-x="3200" data-y="4300" data-z="0">
 		Betrachten wir nun das <strong>Gruppengesetz</strong> mit \(\mathcal{O}\)
 		als Einheit
+    </div>
+
+	<div id="gruppengesetz_1_info_zu_O" class="step slide" data-x="4200" data-y="4300" data-z="0">
+		<h2>Informationen zu \(\mathcal{O}\)</h2>
+		<p>
+			Weil kubische Kurve birational äquivalent zu WNF, können wir
+			von nur einem Punkt im unendlichen ausgehen: \(\mathcal{O}\),
+			weil \(X=0\) dreifache nullstelle bei \(Z=0\).
+		</p>
+		<p>
+			Somit können wir elliptische Kurve unverändert im affinen
+			Raum als Lösungen \((x,y)\) zusammen mit \(\mathcal{O}\)
+			betrachten.
+		</p>
+		<p>
+		Interessanter Nebeneffekt: Jede Gerade schneidet nun immer
+		unsere Kurve in genau drei Punkten!
+		</p>
+    </div>
+
+	<div id="gruppengesetz_2_addition" class="step slide" data-x="5200" data-y="4300" data-z="0">
+		<h2>Addition von Punkten mit \(\mathcal{O}\) als Einheit</h2>
+		\[\begin{aligned}
+			&+ : C \times C \to C, \\
+			&P + Q = (P \ast Q) \ast \mathcal{O}
+		\end{aligned}\]
+		<div class="graph">
+			<img src="./res/gruppengesetz_O-Einheit.png" />
+		</div>
+    </div>
+
+	<div id="gruppengesetz_2_addition_beweis" class="step slide" data-x="5200" data-y="5100" data-z="0">
+		<h2>Addition von Punkten mit \(\mathcal{O}\) als Einheit - Beweis</h2>
+		<p>
+			Beachte, dass \(\mathcal{O}\) unter \(\mathbb{P}^2 = \mathbb{A}^2 \dot \cup \mathbb{P}\)
+			den vertikalen Geraden entspricht. Somit ist \(S\ast \mathcal{O}\)
+			eine Reflektion entlang der \(x\)-Achse, da
+			<a href="#arten_der_WNF">WNF</a> stets Achsensymmetrisch ist.
+		</p>
+		<p>
+			Siehe folgende Grafiken:
+			<ul style="list-style-type:disc">
+				<li><a href="#wnf_konstruktion_2.1">Weierstraß Normalform Konstruktion - Grafik</a></li>
+				<li><a href="#/point_at_infinity_1.2">Point at infinity - Grafik</a></li>
+			</ul>
+		</p>
+    </div>
+
+	<div id="gruppengesetz_2_negation" class="step slide" data-x="6200" data-y="4300" data-z="0">
+		<h2>Negation von Punkten mit \(\mathcal{O}\) als Einheit</h2>
+		\[\begin{aligned}
+			&- : C \to C, \\
+			&-(x,y) = (x,-y)
+		\end{aligned}\]
+		<div class="graph">
+			<img src="./res/gruppengesetz_O-Einheit_negation.png" />
+		</div>
+    </div>
+
+	<div id="gruppengesetz_2_negation_beweis" class="step slide" data-x="6200" data-y="5100" data-z="0">
+		<h2>Negation von Punkten mit \(\mathcal{O}\) als Einheit - Beweis</h2>
+		\[Q+(-Q) = (Q \ast (Q\ast \mathcal{O}))\ast \mathcal{O}\]
+		<p>
+			Wobei \((Q\ast \mathcal{O})\) der Reflektion entlang der
+			\(x\)-Achse entspricht.
+		</p>
+		<p>
+			Der einzige Punkt, welcher von Gerade durch \(Q\) und \(-Q\)
+			geht, ist der Punkt im unendlichen \(\mathcal{O}\).
+		</p>
+		<p>
+			Die Gerade durch den Punkt im unendlichen und den Punkt im
+			unendlichen trifft nur den Punkt im unendlichen. Siehe:
+			<a href="#point_at_infinity_1.1">diese Grafik</a>
+		</p>
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Einleitung" class="step" data-x="6900" data-y="5300" data-z="0" data-rotate-z="-45" data-rotate-y="70" data-rotate-x="-20" data-z="100">
+		Wir möchten dies nun <strong>effizient realisieren</strong>!
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Vorraussetzungen" class="step slide" data-x="4100" data-y="6100" data-z="0">
+		<h2>Wir brauchen:</h2>
+		<ul style="list-style-type:disc">
+			<li>\(P_1 = (x_1,y_1)\)</li>
+			<li>\(P_2 = (x_2,y_2)\)</li>
+			<li>\(P_1\ast P_2 = (x_3,y_3)\)</li>
+			<li>\(P_1+ P_2 = (x_3,-y_3)\)</li>
+		</ul>
+		<small>
+			Unter Annahme, dass nur Punkte aus \(\mathbb{A}^2\)
+			addiert werden sollen!
+		</small>
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Gegeben_Grafik" class="step" data-x="5100" data-y="6100">
+		<h5>Startsituation</h5>
+		<div class="graph">
+			<iframe src="https://www.desmos.com/calculator/8ie03frsnx?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Sekante" class="step" data-x="6100" data-y="6100">
+		<div class="graph" style="margin-bottom: 3px">
+			<iframe src="https://www.desmos.com/calculator/hbvt0his2m?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<p style="font-size: 20px; margin-top: 0px">
+			\[\begin{aligned}
+				\text{Sekante}_{P_1,P_2}(t) &= \lambda t+\nu\\
+				&\text{mit } \\
+				& \lambda = \frac{y_2-y_1}{x_2-x_2} \\
+				& \nu = y_1-\lambda x_1 = y_2-\lambda x_2
+			\end{aligned}\]
+		</p>
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Schnittpunkte" class="step" data-x="7100" data-y="6100">
+		<div class="graph" style="margin-bottom: 3px">
+			<iframe src="https://www.desmos.com/calculator/n4ifp3msrg?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<p style="font-size: 20px; margin-top: 0px">
+			\[\begin{aligned}
+				&S(x)^2=x^3+ax^2+bx+c \\
+				\Leftrightarrow& 0=x^3+(a-\lambda^2)x^2+(b-2\lambda\nu)x+(c-\nu^2) \\
+				\Leftrightarrow& 0=(x-x_1)(x-x_2)(x-x3)
+			\end{aligned}\]
+		</p>
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Schnittpunkt_gefunden" class="step" data-x="8100" data-y="6100">
+		<div class="graph" style="margin-bottom: 3px">
+			<!-- <iframe src="https://www.desmos.com/calculator/cinyf9j7k8?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe> -->
+			<iframe src="https://www.desmos.com/calculator/misrn5qpdq?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		</div>
+		<p style="font-size: 30px; margin-top: 0px">
+			\[x_3=\lambda^2-a-x_1-x_2, \quad y_3 = \lambda x_3+\nu\]
+		</p>
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Sonderfall" class="step" data-x="4100" data-y="6700" data-z="0">
+		Was ist mit \(\lambda=\frac{y_2-y_1}{x_2-x_1}\), wenn \(P_1\)
+		und \(P_2\) der selbe Punkt sind?
+    </div>
+
+	<div id="gruppengesetz_3_realisierung_Ableitung" class="step slide" data-x="5100" data-y="6900" data-z="0">
+		<p>
+			Wir betrachten Tangente statt Sekante. Durch
+			<a href="https://www.youtube.com/watch?v=kfF40MiS7zA">implizite Differenzierung</a>
+			setzen wir
+			<div class="equation">
+				\[\lambda = \frac{\partial y}{\partial x}\Bigg|_{P_0} = \frac{f'(x_0)}{2y_0}\]
+			</div>
+		</p>
+		<p>
+			Wir haben auch die explizite <strong>duplication Formula</strong>,
+			"dup" welche für einen Punkt \(P=(x,y)\) die Berechnung
+			der \(x\)-Coordinate von \(2P = P+P\) erleichtert:
+			<div class="equation">
+				\[\begin{aligned}
+					2(x,y) &= (\text{dup}(x,y), -\text{sign}(x,y)\sqrt{\text{dup}(x,y)}) \\
+					&\text{mit} \\
+					&\text{dup}(x,y) = \frac{x^4-2bx^2-8cx+b^2-4ac}{4x^3+4ax^2+4bx+4c} \\
+					&\text{sign}(x,y) = \text{sign}(y)
+				\end{aligned}\]
+			</div>
+		</p>
+    </div>
+
+	<div id="ende" class="step slide" data-x="6100" data-y="6900" data-z="0">
+		© 2021 <a href="https://quoteme.github.io/">Luca Leon Happel</a>
+		<br>
+		Basierend auf "Rational Points on Elliptic Curves" von
+		Joseph H. Silverman und John T. Tate.
+		<br>
+		Weitere nützliche Projekte (100% von mir geschrieben) zu
+		diesem Thema:
+		<ul style="list-style-type:disc">
+			<li><a href="https://github.com/Quoteme/projectiveEllipiticCurvePlotter/">Projective elliptic curve plotter</a></li>
+			<li><a href="https://quoteme.github.io/math/algebraischeMengenVisualisator2.html">(komplexe) algebraische Mengen Visualisator</a></li>
+			<li><a href="https://quoteme.github.io/math/projektivePlane/index.html">Projektive Plane</a></li>
+			<li><a href="./res/projectiveTransform/">Projektive Transformation einer Elliptischen kurve animiert</a> (Leertaste drücken!)</li>
+		</ul>
     </div>
 
     <!-- <div id="wnf_gruppenhom" class="step slide" data-x="-1000" data-y="2800"> -->
     <!-- </div> -->
 
-    <div id="overview" class="step" data-x="2500" data-y="1000" data-z="0" data-scale="9">
+    <div id="overview" class="step" data-x="3500" data-y="2000" data-z="0" data-scale="11">
     </div>
 
 </div>
