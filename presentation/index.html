@@ -42,11 +42,13 @@
 		<h2>Erinnerung:</h2>
 		<strong>Mordell's Theorem</strong>
 		<p id="mordellsTheorem">
-		Wenn eine nicht singuläre rationale kubische Kurve in der
+		Wenn eine nicht singuläre rationale kubische Kurve
+		\(C\subset \mathbb{P}^2(\mathbb{Q})\) in der
 		Ebene einen rationalen Punkt hat, so ist die Gruppe der
 		rationalen Punkte endlich erzeugt.
 		</p>
-		möchten wir beweisen!
+		möchten wir beweisen! Wir werden dabei noch \(\mathcal{O}\in C\)
+		als Punkt im Unendlichen betrachten.
     </div>
 
 	<div id="vereinfachen" class="step" data-x="0" data-y="-1500" data-scale="0.9" data-z="-10">
@@ -70,7 +72,7 @@
 			<iframe src="https://www.desmos.com/calculator/lidsozyvun?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
 		</div>
 		<div class="equation">
-			\[C: P=0 \to C': y^2=x^3+a'x^2+b'x+c'\]
+			\[C: P=0 \text{ ersetzen durch } C': y^2=x^3+g_1x+g_2\]
 		</div>
     </div>
 
@@ -88,9 +90,9 @@
 				<td><span style="color: #87ba83">klassisch</span></td>
 				<td><span style="color: #f06f48">allgemein</span></td>
 			</tr>
-			<tr>
+			<tr style="font-size: 24px">
 				<td>\(y^2=4x^3-\textcolor{#87ba83}{g_2}x-\textcolor{#87ba83}{g_3}\)</td>
-				<td>\(y^2=x^3+\textcolor{#f06f48}{a}x^2+\textcolor{#f06f48}{b}x+\textcolor{#f06f48}{c}\)</td>
+				<td>\(y^2+\textcolor{#f06f48}{a}xy+\textcolor{#f06f48}{b}y=x^3+\textcolor{#f06f48}{c}x^2+\textcolor{#f06f48}{d}x+\textcolor{#f06f48}{e}\)</td>
 			</tr>
 		</table>
     </div>
@@ -105,9 +107,14 @@
     </div>
 
     <div id="birationale_aequivalenz-extra" class="step" data-x="40" data-y="-500" data-scale="0.5">
-		"birational äquivalent" bedeutet, es gibt eine
+		"birational äquivalent" bedeutet hier, es gibt eine
 		<a href="./res/projectiveTransform/">projektive Transformation</a>
-		zwischen den kubischen Kurven
+		zwischen den kubischen Kurven.
+		<br>
+		<small>
+			allgemein: Die Funtionenkörper \(k(C), k(C')\) sind
+			isomorph
+		</small>
     </div>
 
     <div id="wnf_konstruktion_0" class="step" data-x="-1000" data-y="0" data-scale="0.8">
@@ -145,9 +152,9 @@
 		<img src="./res/WNF_Konstruktion_2.png">
     </div>
 
-    <div id="wnf_konstruktion_2.1" class="step" data-x="600" data-y="1300" data-scale="0.7">
-		<img width="800" src="./res/projektiverRaum.png">
-    </div>
+    <!-- <div id="wnf_konstruktion_2.1" class="step" data-x="600" data-y="1300" data-scale="0.7"> -->
+		<!-- <img width="800" src="./res/projektiverRaum.png"> -->
+    <!-- </div> -->
 
     <div id="wnf_konstruktion_3" class="step slide" data-x="1000" data-y="700" data-z="0">
 		<h2>Schritt 3</h2>
@@ -159,7 +166,8 @@
 		<small>
 			Wenn \(\mathcal{O}\) ein Wendepunkt (point of inflection) ist,
 			können wir eine beliebige Gerade wählen, welche nicht durch
-			\(\mathcal{O}\) geht.
+			\(\mathcal{O}\) geht. Da es nach Bezout keinen weiteren
+			Schnittpunkt gibt.
 		</small>
 		<img src="./res/WNF_Konstruktion_3.png">
     </div>
@@ -175,7 +183,7 @@
 
     <div id="wnf_konstruktion_5" class="step slide" data-x="3000" data-y="700">
 		<h2>Schritt 5</h2>
-		\[\underbrace{x=\frac{X}{Z}, \quad y=\frac{Y}{Z}}_{\text{Projektive Transformation}}\]
+		\[\underbrace{x=\frac{X}{Z}, \quad y=\frac{Y}{Z}}_{\text{Dehomogenisierung}}\]
 		Neue Form der Gleichung:
 		\[xy^2+(ax+b)y=cx^2+dx+e\]
 		Auf beiden Seiten mit \(x\) multiplizieren:
@@ -192,9 +200,9 @@
 
     <div id="wnf_konstruktion_6" class="step slide" data-x="4000" data-y="700">
 		<h2>Schritt 6</h2>
-		Benenne \(xy\) in \(y\) um:
+		Substituiere \(xy\) in \(y\) um:
 		\[y^2+(ax+b)y=cx^3+dx^2+ex\]
-		Benenne \(\left(y-\frac{ax+b}{2}\right)\) in \(y\)
+		Substituiere \(\left(y-\frac{ax+b}{2}\right)\) zu \(y\)
 		(lineare Transformation) um, was effektiv durch
 		<a href="https://de.wikipedia.org/wiki/Quadratische_Erg%C3%A4nzung">quadratische Ergänzung</a>
 		unser Resultat:
@@ -210,7 +218,7 @@
 		</p>
 		<p>
 			Man kann auch \(x^2\) Term durch Substitution
-			von \(x\) mit \(x-a\) entfernen.
+			von \(x\) mit \(x-a\) entfernen. (kubische Ergänzung)
 		</p>
     </div>
 
@@ -297,13 +305,13 @@
 
     <div id="wnf_gruppenhom" class="step slide" data-x="-1000" data-y="2800">
 		<p>
-			Transformationen haben gerade Linien <strong>nicht</strong>
-			auf gerade Linien geschickt.
+			Transformationen haben Geraden <strong>nicht</strong>
+			auf Geraden geschickt.
 		</p>
 		<p>
 			Wird Gruppenstruktur (siehe. Seminar Daniel) erhalten?
 			Ja! Unsere Transformationen sind also ein (nicht trivialer)
-			Gruppenhomomorphismus.
+			Gruppenisomorphismus.
 		</p>
 		<p>
 			Additionsgesetz ist intrinsisch zur Kurve, also
@@ -489,7 +497,7 @@
     </div>
 
     <div id="point_at_infinity_0" class="step slide" data-x="3000" data-y="3500" data-z="0">
-		<h2>Point at infinity</h2>
+		<h2>Punkt bei Unendlich</h2>
 		Betrachte wieder kubische Kurve
 		\[y^2=x^3+ax^2+bx+c\]
 		Und ihre Projektivierung
@@ -499,7 +507,7 @@
     <div id="point_at_infinity_1" class="step slide" data-x="4000" data-y="3500" data-z="0">
 		<p>
 			Wenn wir \(Z=0\) setzen, so sehen wir nur noch die
-			Nullstellen auf der <a href="wnf_konstruktion_2.1">line at infinity</a>.
+			Nullstellen auf der <a href="wnf_konstruktion_2.1">Gerade bei Unendlich</a>.
 		</p>
 		\[Y^2\cdot 0=X^3+aX^2\cdot 0+bX\cdot 0^2+c\cdot 0^3\]
 		\[\Leftrightarrow 0=X^3\]
@@ -511,7 +519,7 @@
 		<p>
 			\(X=0, \> Z=0\) korrespondiert zu \(\mathcal{O} = (0:1:0)\), also den
 			vertikalen Linien, wenn man \(\mathbb{P}^2 = \mathbb{A}^2 \dot\cup \mathbb{P}^1\)
-			als Koprodukt auffasst.
+			disjunkt zerlegt.
 		</p>
     </div>
 
